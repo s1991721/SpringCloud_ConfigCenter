@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: order
+
+  datasource:
+    username: mysqluser
+    password: MySQL_user123
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.2.27.112/SpringCloud_Sell?characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8&allowPublicKeyRetrieval=true
+
+  jpa:
+    show-sql: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+server:
+  port: 8081
