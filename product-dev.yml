@@ -1,5 +1,8 @@
 spring:
 
+  rabbitmq:
+    host: 10.2.26.111   
+    
   datasource:
     username: mysqluser
     password: MySQL_user123
