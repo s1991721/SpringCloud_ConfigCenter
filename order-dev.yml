@@ -1,12 +1,23 @@
 spring:
   application:
     name: order
-
+    
+  redis:
+    host: 10.2.26.111
+    port: 6379
+    
   datasource:
     username: mysqluser
     password: MySQL_user123
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://10.2.27.112/SpringCloud_Sell?characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8&allowPublicKeyRetrieval=true
+
+  cloud:
+    stream:
+      bindings:
+        myMessage:
+          group: order #消息分组
+          content-type: application/json
 
   jpa:
     show-sql: true
