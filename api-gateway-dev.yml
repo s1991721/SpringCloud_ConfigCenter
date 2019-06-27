@@ -15,5 +15,5 @@ zuul:
     #简洁写法
 #    product: /myProduct/**
   #不对外开放的设置
-  ignored-patterns:
-    - /**/product/list
+#  ignored-patterns:
+#    - /**/product/list
