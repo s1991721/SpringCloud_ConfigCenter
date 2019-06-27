@@ -1,3 +1,9 @@
+spring:
+
+  redis:
+    host: 10.2.26.111
+    port: 6379
+
 eureka:
   client:
     service-url:
