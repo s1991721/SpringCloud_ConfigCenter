@@ -6,7 +6,11 @@ eureka:
 server:
   port: 8083
 
+
 zuul:
+#全部服务忽略敏感头
+  sensitive-headers:
+  
   routes:
     myProduct:
       path: /myProduct/**
